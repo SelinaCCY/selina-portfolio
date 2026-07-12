@@ -1,7 +1,5 @@
 # Selina's Portfolio
 
-A journey-based personal portfolio site for Selina Cheah.
-
 ## Tech Stack
 
 This portfolio is built with **React** + **TypeScript**, bundled with **Vite**.
