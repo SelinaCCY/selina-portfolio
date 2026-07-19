@@ -80,7 +80,7 @@ function AccordionRow({ role, isOpen, onToggle }: AccordionRowProps) {
                 style={{
                   background: `rgba(${role.accentColorRgb},0.06)`,
                   borderColor: `rgba(${role.accentColorRgb},0.2)`,
-                  color: role.id === 'ai' ? '#3d5c80' : '#7a4820',
+                  color: role.outcomeTextColor,
                 }}
               >
                 <StarIcon color={role.accentColor} />

@@ -15,6 +15,7 @@ export interface Role {
   description?: string;
   bullets?: string[];
   outcome?: string;
+  outcomeTextColor?: string;
   techCards?: TechCard[];
   placeholder?: boolean;
   group?: { id: string; label: string };
@@ -24,13 +25,41 @@ export const roles: Role[] = [
   {
     id: 'current',
     number: '01',
-    numberColor: '#9060c0',
+    numberColor: '#5b9fd4',
     title: 'Software / AI Engineer — AVP',
-    subtitle: 'Citi, London · [Team] · [Start date] – Present',
+    subtitle: 'Citi, London · Agentic AI, CTO Division · Jul 2026 – Present',
     current: true,
-    accentColor: '#9060c0',
-    accentColorRgb: '144,96,192',
-    placeholder: true,
+    accentColor: '#5b9fd4',
+    accentColorRgb: '91,159,212',
+    description:
+      'Contributing to the backend engineering of a production agentic AI system built on LangGraph — converting free-text requirements into fully-structured Jira tickets for pilot users.',
+    bullets: [
+      "The system uses a suite of tools — feature analysis, backlog analysis, and epic matching — to generate a tailored change plan for each requirement, which the user reviews and approves before tickets are created",
+      "Integrates with the Jira API to programmatically create and populate tickets, pushed directly to the user's board on acceptance",
+      'Involved in architecture decisions spanning the backend, agentic pipeline, and frontend integration layers',
+      'Leading cross-regional engineering coordination across EMEA, APAC, and NAM — acting as the communication bridge between the EMEA team lead and engineers based in India and Canada',
+      'Building backend features in Python within a broader stack that includes Java Spring Boot for the agentic service layer and MongoDB for persistence',
+    ],
+    outcome: 'Live with pilot users · leading cross-regional engineering coordination across EMEA, APAC, and NAM',
+    outcomeTextColor: '#3d5c80',
+    techCards: [
+      {
+        category: 'Languages & Frameworks',
+        tags: ['Python', 'Java (Spring Boot)'],
+      },
+      {
+        category: 'Agentic AI',
+        tags: ['LangGraph'],
+      },
+      {
+        category: 'Integrations & Data',
+        tags: ['Jira API', 'MongoDB'],
+      },
+      {
+        category: 'Infrastructure & CI/CD',
+        tags: ['Lightspeed Enterprise', 'Harness', 'Helm', 'OpenShift', 'Docker'],
+      },
+    ],
   },
   {
     id: 'ai',
@@ -52,6 +81,7 @@ export const roles: Role[] = [
       "Selected as an early pilot tester for an AI coding agent; ran adoption workshops for colleagues and fed structured feedback back to the tool's team",
     ],
     outcome: 'Presented at company Townhall · projected to save 100,000+ developer hours annually',
+    outcomeTextColor: '#3d5c80',
     techCards: [
       {
         category: 'Languages & Frameworks',
@@ -90,6 +120,7 @@ export const roles: Role[] = [
       'Provided production support and on-call coverage for the EMEA region; managed Autosys job scheduling',
     ],
     outcome: 'Fixed Income eTrading Business Knowledge ·  First team in Fixed Income eTrading to go live with Lightspeed and Harness',
+    outcomeTextColor: '#7a4820',
     techCards: [
       {
         category: 'Languages & Frameworks',
@@ -112,11 +143,35 @@ export const roles: Role[] = [
   {
     id: 'intern',
     number: '04',
-    numberColor: '#9098b0',
+    numberColor: '#5c6478',
     title: 'Software Engineering Intern',
-    subtitle: '[Company] · [Team] · Summer 2022',
-    accentColor: '#d0d8e8',
-    accentColorRgb: '208,216,232',
-    placeholder: true,
+    subtitle: 'Citi, London · Commodities Common UI · Jul 2023 – Sept 2023',
+    accentColor: '#5c6478',
+    accentColorRgb: '92,100,120',
+    description:
+      'Contributed to the Commodities Common UI, a reusable front-end template platform used across the Commodities division, gaining full-cycle SDLC exposure from development through production release.',
+    bullets: [
+      'Contributed to the Commodities Common UI, a reusable front-end template platform used by multiple teams across the Commodities division to build consistent applications without starting from scratch',
+      'Built a real-time monitoring feature capturing application usage data, visualized on a live Grafana dashboard via InfluxDB and Flux queries',
+      'Implemented frontend functionality in React and TypeScript, including resolving layout issues to improve user experience across the platform',
+      'Wrote unit tests with Jest and implemented automated end-to-end tests with Playwright, improving code reliability and test coverage',
+      'Participated in the full monthly application release cycle — development, testing, deployment, and maintenance — gaining exposure to production SDLC practices from day one',
+    ],
+    outcome: 'Shipped a real-time Grafana monitoring feature · full exposure to production SDLC and monthly release cycles',
+    outcomeTextColor: '#4a5070',
+    techCards: [
+      {
+        category: 'Languages & Frameworks',
+        tags: ['TypeScript', 'React'],
+      },
+      {
+        category: 'Data & Observability',
+        tags: ['InfluxDB', 'Flux', 'Grafana'],
+      },
+      {
+        category: 'Testing',
+        tags: ['Jest', 'Playwright'],
+      },
+    ],
   },
 ];

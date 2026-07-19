@@ -229,19 +229,6 @@ button {
   background: #e4eaf2;
 }
 
-.btn--sky-small {
-  font: 600 13px/1 'Inter', sans-serif;
-  padding: 10px 20px;
-  background: var(--sky-accent);
-  color: white;
-  border: none;
-  border-radius: 100px;
-}
-
-.btn--sky-small:hover {
-  background: var(--sky-dark);
-}
-
 /* ============================================================
    HERO
    ============================================================ */
@@ -412,6 +399,31 @@ button {
 
 .heading--about {
   margin-bottom: 48px;
+}
+
+.about-note {
+  display: block;
+  font: 400 italic 13px/1.6 'Inter', sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--text-faint);
+  margin-top: 10px;
+}
+
+.about-note__link {
+  font: inherit;
+  color: var(--sky-accent);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.about-note__link:hover {
+  color: var(--sky-dark);
 }
 
 .lead {
@@ -723,17 +735,11 @@ button {
 /* ============================================================
    ABOUT
    ============================================================ */
-.about-grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 64px;
-  align-items: start;
-}
-
 .about-narrative {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 680px;
 }
 
 .about-quote {
@@ -746,73 +752,6 @@ button {
   font: 400 15px/1.78 'Inter', sans-serif;
   color: var(--text-muted);
   text-wrap: pretty;
-}
-
-.about-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.about-card {
-  border-radius: 16px;
-  padding: 28px;
-}
-
-.about-card--light {
-  background: var(--off-white);
-}
-
-.about-card--navy {
-  background: var(--navy-card);
-}
-
-.about-card__label {
-  font: 600 11px/1 'Inter', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.13em;
-  margin-bottom: 16px;
-}
-
-.about-card__label--sky {
-  color: var(--sky-accent);
-}
-
-.about-card__label--sunset {
-  color: var(--sunset-orange);
-  margin-bottom: 14px;
-}
-
-.about-card__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.about-card__item {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  font: 400 14px/1.6 'Inter', sans-serif;
-  color: var(--text-muted);
-}
-
-.about-card__dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  margin-top: 8px;
-  flex-shrink: 0;
-}
-
-.about-card__dot--sky {
-  background: var(--sky-accent);
-}
-
-.about-card__text {
-  font: 400 14px/1.7 'Inter', sans-serif;
-  color: rgba(255, 255, 255, 0.72);
-  margin-bottom: 20px;
 }
 
 /* ============================================================
@@ -938,11 +877,6 @@ button {
 
   .heading {
     font-size: clamp(32px, 7vw, 44px);
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
   }
 
   .projects-grid {
