@@ -7,8 +7,7 @@ export function Projects() {
         <div className="eyebrow">Personal</div>
         <h2 className="heading heading--with-lead">Projects</h2>
         <p className="lead">
-          Things I&apos;ve built outside of work — for curiosity, for friends, and occasionally because something
-          annoyed me enough to fix it.
+          Things I&apos;ve built outside of work - applications that I would actually use it myself
         </p>
         <div className="projects-grid">
           {projects.map((project) => (

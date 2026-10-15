@@ -6,6 +6,8 @@ This portfolio is built with **React** + **TypeScript**, bundled with **Vite**.
 
 Designed and developed with the help of **Claude Code** and **Claude Design** by Anthropic.
 
+Deployed with **Vercel** and can be found [here](https://selina-portfolio-snowy.vercel.app/)
+
 ## Running locally
 
 ```bash

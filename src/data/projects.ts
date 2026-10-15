@@ -34,16 +34,4 @@ export const projects: Project[] = [
     tags: ['React Native', 'Node.js', 'PostgreSQL'],
     github: '#',
   },
-  {
-    title: 'Volleyball Stats Tracker',
-    category: 'Data / Sports',
-    color: '#9060c0',
-    colorRgb: '144,96,192',
-    gradient: 'linear-gradient(135deg, #2a1a50, #9060c0)',
-    description:
-      'Match-day stats with visualisations — built for my club coach who was tracking everything on paper. Shipped in a weekend.',
-    tags: ['Python', 'Streamlit', 'pandas'],
-    github: '#',
-    demo: '#',
-  },
 ];

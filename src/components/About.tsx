@@ -2,7 +2,7 @@ import { scrollToSection } from '../utils/scroll';
 
 export function About() {
   return (
-    <section id="about" className="section section--white section--about">
+    <section id="about" className="section section--about">
       <div className="section__container">
         <div className="eyebrow">Story</div>
         <h2 className="heading heading--about">

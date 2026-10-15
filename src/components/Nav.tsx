@@ -1,4 +1,5 @@
 import { scrollToSection } from '../utils/scroll';
+import { SHOW_PROJECTS } from '../config/features';
 
 interface NavProps {
   scrolled: boolean;
@@ -6,7 +7,7 @@ interface NavProps {
 
 const links: { id: string; label: string }[] = [
   { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
+  ...(SHOW_PROJECTS ? [{ id: 'projects', label: 'Projects' }] : []),
   { id: 'about', label: 'About' },
 ];
 

@@ -7,6 +7,7 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { useScrolled } from './hooks/useScrolled';
+import { SHOW_PROJECTS } from './config/features';
 
 export default function App() {
   const scrolled = useScrolled();
@@ -16,7 +17,7 @@ export default function App() {
       <Nav scrolled={scrolled} />
       <Hero />
       <Experience />
-      <Projects />
+      {SHOW_PROJECTS && <Projects />}
       <About />
       <Contact />
       <Footer />

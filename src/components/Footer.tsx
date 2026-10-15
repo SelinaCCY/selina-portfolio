@@ -1,8 +1,9 @@
 import { scrollToSection } from '../utils/scroll';
+import { SHOW_PROJECTS } from '../config/features';
 
 const links: { id: string; label: string }[] = [
   { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
+  ...(SHOW_PROJECTS ? [{ id: 'projects', label: 'Projects' }] : []),
   { id: 'about', label: 'About' },
   { id: 'contact', label: 'Contact' },
 ];

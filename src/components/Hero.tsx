@@ -1,4 +1,5 @@
 import { scrollToSection } from '../utils/scroll';
+import { SHOW_PROJECTS } from '../config/features';
 import { DownloadIcon, ScrollArrowIcon } from './icons';
 
 interface Bird {
@@ -62,9 +63,11 @@ export function Hero() {
           <button className="btn btn--white" onClick={() => scrollToSection('experience')}>
             View Experience
           </button>
-          <button className="btn btn--ghost" onClick={() => scrollToSection('projects')}>
-            See Projects
-          </button>
+          {SHOW_PROJECTS && (
+            <button className="btn btn--ghost" onClick={() => scrollToSection('projects')}>
+              See Projects
+            </button>
+          )}
           <a href="#" className="btn btn--outline">
             <DownloadIcon />
             Download CV
