@@ -1,3 +1,6 @@
+import woofAmIDemo from '../assets/woof-am-i-demo.mp4';
+import woofAmIPoster from '../assets/woof-am-i-demo-poster.jpg';
+
 export interface Project {
   title: string;
   category: string;
@@ -8,6 +11,10 @@ export interface Project {
   tags: string[];
   github?: string;
   demo?: string;
+  /** Short demo clip. A project with one is shown as a wide card with the clip beside the text. */
+  video?: string;
+  /** Still image shown before the clip loads. */
+  poster?: string;
 }
 
 export const projects: Project[] = [
@@ -21,5 +28,7 @@ export const projects: Project[] = [
       'Snap a photo of a dog and get its breed in seconds. My university capstone and first end-to-end build: I trained an image classifier in Python, converted it to Core ML, and shipped it inside a native iOS app that real users could pick up and use.',
     tags: ['Swift', 'Core ML', 'TensorFlow'],
     github: 'https://github.com/SelinaCCY/dog-breed-recognition-iOS-app',
+    video: woofAmIDemo,
+    poster: woofAmIPoster,
   },
 ];
