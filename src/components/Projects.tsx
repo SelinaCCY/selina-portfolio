@@ -1,5 +1,9 @@
 import { projects } from '../data/projects';
 
+/** Open real external links in a new tab; leave in-page links alone. */
+const externalLinkProps = (href: string) =>
+  href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {};
+
 export function Projects() {
   return (
     <section id="projects" className="section section--tint">
@@ -34,12 +38,20 @@ export function Projects() {
                 </div>
                 <div className="project-card__links">
                   {project.github && (
-                    <a href={project.github} className="project-card__link project-card__link--primary">
+                    <a
+                      href={project.github}
+                      className="project-card__link project-card__link--primary"
+                      {...externalLinkProps(project.github)}
+                    >
                       GitHub →
                     </a>
                   )}
                   {project.demo && (
-                    <a href={project.demo} className="project-card__link">
+                    <a
+                      href={project.demo}
+                      className="project-card__link"
+                      {...externalLinkProps(project.demo)}
+                    >
                       Live demo →
                     </a>
                   )}

@@ -1,11 +1,11 @@
 /**
  * Feature flags.
  *
- * SHOW_PROJECTS: the Projects section is still a work in progress, so it is
- * hidden by default (section, nav/footer links, and the hero "See Projects" CTA).
- * Flip the fallback below to `true`, or set VITE_SHOW_PROJECTS=true in the
- * environment (e.g. in a Vercel preview deployment), to show it.
+ * SHOW_PROJECTS: controls the Projects section (the section itself, the
+ * nav/footer links, and the hero "See Projects" CTA). It is on by default.
+ * Set VITE_SHOW_PROJECTS=false in the environment to hide it again without
+ * a code change.
  */
 export const SHOW_PROJECTS = import.meta.env.VITE_SHOW_PROJECTS
   ? import.meta.env.VITE_SHOW_PROJECTS === 'true'
-  : false;
+  : true;
