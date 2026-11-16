@@ -1,0 +1,32 @@
+name: CI
+
+# Checks that the site lints and builds. Deployment is handled by Vercel's own
+# Git integration (every push to main goes to production, every other branch
+# gets a preview), so this workflow does not deploy.
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          # Vite 8 and ESLint 10 need Node 20.19+ / 22.12+.
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
