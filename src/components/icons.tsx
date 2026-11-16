@@ -84,6 +84,22 @@ export function MailIcon() {
   );
 }
 
+export function DocumentIcon() {
+  return (
+    <svg width="14" height="16" viewBox="0 0 14 16">
+      <path
+        d="M2.5 0.75 L8.5 0.75 L13.25 5.5 L13.25 13.5 Q13.25 15.25 11.5 15.25 L2.5 15.25 Q0.75 15.25 0.75 13.5 L0.75 2.5 Q0.75 0.75 2.5 0.75 Z"
+        stroke="#5b9fd4"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      <path d="M8.5 0.75 L8.5 5.5 L13.25 5.5" stroke="#5b9fd4" strokeWidth="1.4" strokeLinejoin="round" fill="none" />
+      <path d="M3.75 9 L10.25 9 M3.75 12 L8 12" stroke="#5b9fd4" strokeWidth="1.4" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function LinkedInIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16">

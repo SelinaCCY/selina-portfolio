@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { roles, type Role } from '../data/experience';
 import { TechStackGroup } from './TechStackGroup';
 import { ChevronIcon, DownloadIcon, StarIcon } from './icons';
+import { CV_FILENAME, CV_URL } from '../config/cv';
 
 type RoleId = (typeof roles)[number]['id'];
 
@@ -114,7 +115,7 @@ export function Experience() {
             <div className="eyebrow">Work</div>
             <h2 className="heading">Experience</h2>
           </div>
-          <a href="#" className="btn btn--pill-light">
+          <a href={CV_URL} download={CV_FILENAME} className="btn btn--pill-light">
             <DownloadIcon size={13} />
             Download CV
           </a>

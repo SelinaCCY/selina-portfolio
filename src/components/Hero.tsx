@@ -1,5 +1,6 @@
 import { scrollToSection } from '../utils/scroll';
 import { SHOW_PROJECTS } from '../config/features';
+import { CV_FILENAME, CV_URL } from '../config/cv';
 import { DownloadIcon, ScrollArrowIcon } from './icons';
 
 interface Bird {
@@ -68,7 +69,7 @@ export function Hero() {
               See Projects
             </button>
           )}
-          <a href="#" className="btn btn--outline">
+          <a href={CV_URL} download={CV_FILENAME} className="btn btn--outline">
             <DownloadIcon />
             Download CV
           </a>
