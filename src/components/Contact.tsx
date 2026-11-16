@@ -1,7 +1,7 @@
 import { ArrowRightIcon, ClockIcon, GitHubIcon, LinkedInIcon, MailIcon } from './icons';
 
 const contactLinks = [
-  { icon: <MailIcon />, label: 'Email', value: 'selinacheah02@gmail.com', href: 'mailto:elinacheah02@gmail.com' },
+  { icon: <MailIcon />, label: 'Email', value: 'selinacheah02@gmail.com', href: 'mailto:selinacheah02@gmail.com' },
   { icon: <LinkedInIcon />, label: 'LinkedIn', value: 'linkedin.com/in/selinaccy', href: 'https://www.linkedin.com/in/selinaccy/' },
   { icon: <GitHubIcon />, label: 'GitHub', value: 'github.com/selina', href: 'https://github.com/SelinaCCY' },
 ];
